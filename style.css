@@ -1,0 +1,130 @@
+/* Reset dasar untuk kerapian margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background gradasi modern bernuansa cerah (Pinkish) */
+body {
+    background: linear-gradient(135deg, #fce1db, #ffd1ff, #fad0c4);
+    background-size: 400% 400%;
+    animation: gradientShift 12s ease infinite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Animasi background */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Kotak Kartu Form */
+.form-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Bagian Header Form */
+.form-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.badge {
+    background: #ff4d6d;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.form-header h2 {
+    font-size: 24px;
+    color: #2f3640;
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    font-size: 13px;
+    color: #718093;
+}
+
+/* Grup Input Form */
+.input-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #2f3640;
+    margin-bottom: 6px;
+}
+
+/* Styling untuk Input & Textarea (Bagian yang sebelumnya terpotong) */
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    font-family: inherit;
+    font-size: 13px;
+    color: #2f3640;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #a4b0be;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #ff4d6d;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(255, 77, 109, 0.1);
+}
+
+/* Styling Tombol Submit */
+.btn-submit {
+    width: 100%;
+    background-color: #ff4d6d;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(255, 77, 109, 0.4);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
